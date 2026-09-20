@@ -1,10 +1,10 @@
 ---
-title: "Get Started with K8dKeep in Minutes"
+title: "Get Up and Running with K8dKeep: Childcare Setup Guide"
 sidebarTitle: "Quick Start"
-description: "Set up your K8dKeep account, configure your first classroom, enroll a child, and collect your first payment in four steps."
+description: "Create your account, configure your center profile, add a classroom, and enroll your first child — K8dKeep takes you live in minutes."
 ---
 
-This guide walks you through everything you need to do to have K8dKeep fully operational for your childcare center. By the end, you will have a verified account, a configured center profile, at least one active classroom, an enrolled child, and your billing ready to collect payments — all in under 30 minutes.
+This guide walks you through everything you need to do to have K8dKeep fully operational for your childcare center. By the end, you will have a verified account, a configured center profile, at least one active classroom, an enrolled child, and billing configured to collect payments — all in under 30 minutes.
 
 <Steps>
   <Step title="Create Your Account">
@@ -62,22 +62,36 @@ This guide walks you through everything you need to do to have K8dKeep fully ope
     - Choose an enrollment start date and program type (full-time, part-time, or drop-in)
 
     Once the form is complete, click **Send Enrollment Packet**. K8dKeep emails the family a secure link where they can review, complete, and digitally sign all required forms — including health history, photo release, and your center's policies. You can monitor the packet's status from the **Enrollment** dashboard.
+
+    <Tip>
+      If you are migrating from another system or a spreadsheet, you can import existing families in bulk using a CSV file. Go to **Enrollment > Import Families**, download the K8dKeep CSV template, fill in your data, and upload the file. K8dKeep maps each row to a new family record and flags any missing required fields before the import is finalized.
+    </Tip>
+  </Step>
+  <Step title="Configure Billing and Collect Payments">
+    Open **Billing > Settings** to configure how K8dKeep invoices your families. Set up the following:
+
+    - **Tuition Rates** — create rate plans for each program type (full-time, part-time, drop-in). You can apply rates per child, per classroom, or per schedule.
+    - **Billing Cycle** — choose weekly, bi-weekly, or monthly billing. K8dKeep generates invoices automatically on the schedule you select.
+    - **Payment Methods** — enable ACH bank transfers and/or credit and debit card payments. Parents pay directly through the parent portal or the K8dKeep mobile app.
+    - **Auto-Pay** — optionally allow families to enroll in automatic payments so invoices are charged on the due date without any manual action.
+
+    Once you save your billing settings, K8dKeep creates the first invoice for every active enrollment automatically. You can review pending invoices under **Billing > Invoices** before they are sent.
+
+    <Note>
+      K8dKeep uses Stripe to process all payments. Payouts are deposited to the bank account you connect under **Billing > Payout Settings**, typically within 2 business days of a successful payment.
+    </Note>
   </Step>
 </Steps>
 
-<Tip>
-  If you are migrating from another system or a spreadsheet, you can import existing families in bulk using a CSV file. Go to **Enrollment > Import Families**, download the K8dKeep CSV template, fill in your data, and upload the file. K8dKeep maps each row to a new family record and flags any missing required fields before the import is finalized.
-</Tip>
-
 ## What to Do Next
 
-Now that your center is set up and your first child is enrolled, take these next steps to complete your K8dKeep configuration.
+Now that your center is fully configured, invite your team to start using K8dKeep day-to-day.
 
 <CardGroup cols={2}>
-  <Card title="Set Up Billing" icon="credit-card" href="/billing/overview">
-    Configure tuition rates, billing cycles, and payment methods so invoices generate automatically.
-  </Card>
   <Card title="Invite Staff" icon="users" href="/staff/staff-management">
     Add your teachers and administrators and assign them the right roles and classroom access.
+  </Card>
+  <Card title="Explore All Features" icon="grid-2" href="/introduction">
+    Discover attendance tracking, parent messaging, daily reports, and more in the K8dKeep docs.
   </Card>
 </CardGroup>
