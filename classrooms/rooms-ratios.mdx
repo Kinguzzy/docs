@@ -1,0 +1,74 @@
+---
+title: "Set Up Classrooms and Monitor Staff-to-Child Ratios"
+sidebarTitle: "Rooms & Ratios"
+description: "Create classrooms with age ranges and capacity limits, assign staff, and get real-time alerts when your staff-to-child ratio approaches the legal limit."
+---
+
+Proper room setup is the foundation of safe, compliant childcare. In K8dKeep, every classroom you create carries its own age range, licensed capacity, and required staff-to-child ratio. As children check in and staff clock on throughout the day, K8dKeep recalculates the live ratio for each room and surfaces an immediate visual and push-notification alert the moment you approach — or exceed — your licensed threshold.
+
+<Warning>
+  Staff-to-child ratios are regulated by state and local licensing agencies, and requirements vary significantly by age group and state. The ratio alerts in K8dKeep are a powerful compliance tool, but they are not a substitute for knowing your jurisdiction's current rules. Always verify your applicable ratios with your state childcare licensing office and update your room settings whenever regulations change.
+</Warning>
+
+## Creating a Classroom
+
+<Steps>
+  <Step title="Open the Classrooms section">
+    From your K8dKeep director dashboard, navigate to **Classrooms** in the left sidebar, then click **Add Classroom** in the top-right corner.
+  </Step>
+  <Step title="Enter the room name">
+    Type a descriptive name that identifies both the room and the age group it serves — for example, **Bluebird Room – Toddlers** or **Sunshine Room – Pre-K**. This name appears on the dashboard, in parent reports, and on staff schedules.
+  </Step>
+  <Step title="Set the age range">
+    Enter the minimum and maximum child age for the room (e.g., **18 months – 3 years**). K8dKeep uses this range to filter eligible children during enrollment and to trigger Age Up prompts when a child is approaching the upper limit.
+  </Step>
+  <Step title="Enter the maximum capacity">
+    Enter the licensed maximum number of children permitted in the room at one time. This number comes from your state childcare license and should match the capacity listed on your facility's license certificate.
+  </Step>
+  <Step title="Set the required staff-to-child ratio">
+    Enter the legally required ratio for this age group — for example, **1:4** for infants or **1:6** for toddlers. Ratios vary by state, so confirm the correct value with your licensing agency. K8dKeep uses this ratio as the baseline for all real-time ratio calculations and alert thresholds in this room.
+  </Step>
+  <Step title="Save the classroom">
+    Click **Save**. The new classroom card appears immediately on your Classrooms dashboard and is ready for staff and child assignments.
+  </Step>
+</Steps>
+
+## Assigning Staff to a Classroom
+
+Once a classroom is created, open it and select the **Staff** tab within the classroom settings. Click **Add Staff Member** and search by name or email. Designate one person as the **Lead Teacher** — this role appears in parent-facing communications and daily reports. Add any assistant teachers or aides under the **Assistant** role.
+
+Staff members must have an active K8dKeep account before they can be assigned to a classroom. If a staff member does not yet appear in search results, ask your administrator to create their account first under **Staff Management** before returning to this step.
+
+The staff list you build here determines who counts toward the ratio. Only staff members who are both assigned to the room **and** actively clocked in on that day are included in the live ratio calculation.
+
+## Monitoring Ratios in Real Time
+
+Every classroom card on the dashboard displays a ratio indicator that updates automatically as children check in and staff clock in or out. The indicator uses a three-color system so you can assess compliance across all rooms at a glance:
+
+- **Green** — You are currently within the required ratio and have headroom to spare.
+- **Yellow** — You are within one child of the alert threshold. Consider calling in additional staff or holding new check-ins until coverage increases.
+- **Red** — You are at or over the required ratio limit. Immediate action is required to restore compliance.
+
+When the ratio transitions from green to yellow or from yellow to red, K8dKeep sends a **push notification** to the director and any staff members designated as ratio alert recipients in your settings. The notification includes the room name, current ratio, and the number of additional staff needed to return to green.
+
+## Ratio Alerts
+
+You can customize when alerts fire in **Settings > Classrooms > Ratio Alerts**. For each classroom you can set:
+
+- **Warning threshold** — the ratio level at which yellow status and the first push notification are triggered.
+- **Alert recipients** — which staff roles (Director, Lead Teacher, Assistant) receive push and in-app notifications.
+- **Escalation delay** — how many minutes a red-status condition must persist before a secondary alert is sent to the director's email.
+
+K8dKeep recommends setting your warning threshold at **80% of the maximum legal ratio**. For example, if your toddler room ratio is 1:6, set the warning to trigger when the ratio reaches 1:5. This gives you time to call a floater or adjust coverage before you fall out of compliance, rather than reacting after the fact.
+
+## Capacity vs. Enrollment
+
+It is important to understand the difference between two numbers K8dKeep tracks for every room:
+
+| Term | Definition | Where It Appears |
+|---|---|---|
+| **Licensed Capacity** | The legal maximum number of children permitted in the room at any time, as stated on your facility license | Room settings, Capacity badge on classroom card |
+| **Current Enrollment** | The number of children formally assigned to this classroom in K8dKeep, regardless of whether they are present today | Enrollment tab, classroom roster |
+| **Checked In Today** | The number of enrolled children who have actually checked in during the current operating day | Dashboard ratio indicator, daily attendance report |
+
+The ratio indicator on the dashboard uses **Checked In Today**, not Current Enrollment, to calculate the live ratio. A child who is enrolled but absent does not count toward the ratio for that day. Licensed Capacity, however, is a hard ceiling — you cannot check in more children than the licensed capacity, even if the ratio would otherwise permit it.

@@ -1,13 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "K8dKeep",
+  "projectDescription": "K8dKeep is a childcare management platform that helps centers and daycares manage enrollment, attendance, billing, parent communication, and child development in one place.",
   "theme": "almond",
-  "name": "K8dKeep",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -75,11 +73,19 @@
       }
     ]
   },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Sign Up",
-      "href": "https://app.k8dkeep.com/signup"
-    }
-  }
+  "keyFeatures": [
+    "Online enrollment and waitlist management",
+    "Digital child and family profiles",
+    "Touchless attendance check-in and check-out",
+    "Automated invoicing and recurring billing",
+    "Multiple payment methods including ACH and card",
+    "Classroom assignment and staff-to-child ratio monitoring",
+    "Daily activity logging for meals, naps, and learning",
+    "Real-time parent communication and daily reports",
+    "Photo and video sharing with families",
+    "Compliance and licensing reports",
+    "Role-based access control for staff",
+    "Multi-location management dashboard"
+  ],
+  "publicApiSurface": []
 }

@@ -1,47 +1,83 @@
 ---
-title: "Quickstart"
-description: "Begin with a guide on the fastest path to a successful outcome"
+title: "Get Started with K8dKeep in Minutes"
+sidebarTitle: "Quick Start"
+description: "Set up your K8dKeep account, configure your first classroom, enroll a child, and collect your first payment in four steps."
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
-
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
-
-## Prerequisites
-
-Before you begin, you must have:
-
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
-
-## Get started
+This guide walks you through everything you need to do to have K8dKeep fully operational for your childcare center. By the end, you will have a verified account, a configured center profile, at least one active classroom, an enrolled child, and your billing ready to collect payments — all in under 30 minutes.
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
+  <Step title="Create Your Account">
+    Go to [app.k8dkeep.com/signup](https://app.k8dkeep.com/signup) and fill in the registration form:
 
-    ```bash
-    npm install your-package
-    ```
+    - **Center Name** — enter the legal or operating name of your childcare center.
+    - **Your Email Address** — this becomes your administrator login and the address K8dKeep uses for important account notifications.
+    - **Password** — choose a strong password of at least 10 characters.
+
+    After you submit the form, K8dKeep sends a verification email to the address you provided. Open that email and click **Verify My Email** to activate your account. If the email doesn't arrive within a few minutes, check your spam folder or use the **Resend Verification** link on the login page.
+
+    Once verified, log in at [app.k8dkeep.com](https://app.k8dkeep.com) to reach your Dashboard.
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
+  <Step title="Set Up Your Center">
+    From the Dashboard, navigate to **Settings > Center Profile** to complete your center's core information. K8dKeep uses these details on invoices, enrollment packets, and parent-facing communications, so fill them in carefully.
 
-    ```bash
-    your-cli init
-    ```
+    Provide the following:
+
+    - **Address** — your center's full street address, including suite or unit number if applicable.
+    - **License Number** — your state-issued childcare license number. This appears on official documents and enrollment forms.
+    - **Operating Hours** — set your daily open and close times. These feed into attendance reports and billing calculations.
+    - **Center Logo** — upload a PNG or JPG (recommended size: 400 × 400 px). Your logo appears on invoices, digital enrollment packets, and the parent portal.
+
+    Click **Save Changes** when you are finished. You can return to this page at any time to update your information.
   </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
+  <Step title="Add a Classroom">
+    Navigate to **Classrooms > Add Classroom** to create your first room. Each classroom in K8dKeep represents a physical space in your center and groups children by age or program type.
 
-    ```bash
-    your-cli start
-    ```
+    Fill in the classroom details:
+
+    - **Room Name** — a clear, descriptive name such as "Infant Room," "Toddler A," or "Pre-K Blue."
+    - **Age Range** — set the minimum and maximum ages (in months or years) for children assigned to this room.
+    - **Maximum Capacity** — enter the total number of children this room is licensed to hold.
+    - **Staff-to-Child Ratio Target** — set your desired ratio (for example, 1:4 for infants). K8dKeep displays a real-time ratio indicator on the classroom dashboard and alerts staff when the ratio is at risk of being exceeded.
+
+    Click **Create Classroom** to save. Repeat this process for each room in your center before moving on to enrollment.
+  </Step>
+  <Step title="Enroll Your First Child">
+    Go to **Enrollment > New Enrollment** to add a child to your center and assign them to a classroom.
+
+    Complete the enrollment form in three sections:
+
+    **Child Details**
+    - Full legal name, date of birth, and gender
+    - Any allergies, medical conditions, or special care instructions
+    - Authorized pickup contacts
+
+    **Family Contact Information**
+    - Primary guardian name, phone number, and email address
+    - Secondary guardian details (optional)
+    - Emergency contact outside the household
+
+    **Classroom Assignment**
+    - Select the classroom you created in Step 3
+    - Choose an enrollment start date and program type (full-time, part-time, or drop-in)
+
+    Once the form is complete, click **Send Enrollment Packet**. K8dKeep emails the family a secure link where they can review, complete, and digitally sign all required forms — including health history, photo release, and your center's policies. You can monitor the packet's status from the **Enrollment** dashboard.
   </Step>
 </Steps>
 
 <Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
-
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
+  If you are migrating from another system or a spreadsheet, you can import existing families in bulk using a CSV file. Go to **Enrollment > Import Families**, download the K8dKeep CSV template, fill in your data, and upload the file. K8dKeep maps each row to a new family record and flags any missing required fields before the import is finalized.
 </Tip>
+
+## What to Do Next
+
+Now that your center is set up and your first child is enrolled, take these next steps to complete your K8dKeep configuration.
+
+<CardGroup cols={2}>
+  <Card title="Set Up Billing" icon="credit-card" href="/billing/overview">
+    Configure tuition rates, billing cycles, and payment methods so invoices generate automatically.
+  </Card>
+  <Card title="Invite Staff" icon="users" href="/staff/staff-management">
+    Add your teachers and administrators and assign them the right roles and classroom access.
+  </Card>
+</CardGroup>

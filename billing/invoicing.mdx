@@ -1,0 +1,84 @@
+---
+title: "Set Up Automated Tuition Invoicing in K8dKeep"
+sidebarTitle: "Invoicing"
+description: "Create fee plans, assign children, and let K8dKeep generate and send tuition invoices automatically on your billing schedule."
+---
+
+K8dKeep's automated invoicing eliminates the manual work of creating and sending tuition bills each billing period. Once you configure a fee plan and assign children to it, K8dKeep handles invoice generation, delivery to parents, and payment tracking on the schedule you define — giving you accurate, consistent billing without the administrative overhead.
+
+## Creating a Fee Plan
+
+A fee plan defines your tuition rate, billing cycle, optional extra charges, and the invoice and due dates K8dKeep uses to generate and send invoices automatically.
+
+<Steps>
+  <Step title="Open Fee Plans">
+    Navigate to **Billing > Fee Plans** in the left sidebar and click **New Fee Plan**.
+  </Step>
+  <Step title="Name the plan and set billing frequency">
+    Enter a descriptive name for the plan — for example, "Full-Time Toddler" or "Part-Time Pre-K (3 days)". Then select a billing frequency: **Weekly**, **Bi-weekly**, or **Monthly**.
+  </Step>
+  <Step title="Enter the tuition amount">
+    Type the tuition amount for one billing period. If you use daily or hourly rates instead of a flat fee, toggle **Rate Type** to **Daily** or **Hourly** and enter the per-unit rate. K8dKeep will calculate each invoice based on attendance records.
+  </Step>
+  <Step title="Add optional line items">
+    Click **+ Add Line Item** to include extra charges on invoices for this plan. Common line items include:
+    - **Registration fee** — charged once on the first invoice
+    - **Supply fee** — recurring per billing period
+    - **Late pickup fee** — charged per 15 minutes after your center's closing time; enter the per-interval rate and K8dKeep will add it based on check-out records
+  </Step>
+  <Step title="Configure invoice and due dates">
+    Set the **Invoice Generation Day** — the day of the month (or day of the week, for weekly plans) when K8dKeep creates and sends invoices. Then set the **Payment Due Date**, for example the 1st of each month for invoice generation and the 5th as the due date. For weekly plans, you can set a number of days after invoice generation.
+  </Step>
+  <Step title="Save the fee plan">
+    Click **Save**. Your new fee plan appears in the Fee Plans list and is ready to assign to enrolled children.
+  </Step>
+</Steps>
+
+## Assigning a Fee Plan to a Child
+
+With a fee plan created, connect it to a child's account to begin generating invoices for that family.
+
+1. Open the child's profile from **Children** in the sidebar.
+2. Click the **Billing** tab.
+3. Under **Fee Plan**, click **Assign Fee Plan** and select the appropriate plan from the dropdown.
+4. Set the **Enrollment Start Date** — the date from which billing begins.
+
+**Pro-rating for mid-period starts:** If a child's enrollment start date falls in the middle of a billing period, K8dKeep automatically calculates a pro-rated invoice amount for that first partial period. The full plan amount applies from the following billing period onward.
+
+## Invoice Generation
+
+After you assign a fee plan, K8dKeep takes over. On each configured invoice generation day, the system creates invoices for all active children on that plan and emails them to the primary contact on the family account. Parents can also view and pay invoices at any time through the **K8dKeep Parent Portal**.
+
+If you need to issue an invoice outside the regular schedule — for example, for a one-time charge or a new enrollment mid-cycle — you can manually create one from **Billing > Invoices > New Invoice**. Select the child, add line items, and click **Send** to deliver it to the family immediately.
+
+## Invoice Statuses
+
+Every invoice in K8dKeep carries a status that reflects where it is in the payment lifecycle. You can filter the invoice list by status to quickly identify what needs attention.
+
+| Status | Meaning |
+|--------|---------|
+| **Pending** | The invoice has been created but not yet sent to the family. |
+| **Sent** | The invoice has been emailed to the family and is awaiting payment. |
+| **Paid** | Payment has been received and confirmed for the full invoice amount. |
+| **Overdue** | The payment due date has passed and the invoice remains unpaid. |
+| **Voided** | The invoice has been cancelled and will not be collected. |
+
+## Late Fees
+
+K8dKeep can automatically add a late fee to any invoice that remains unpaid after the due date, saving you from having to track and apply charges manually.
+
+To configure automatic late fees:
+
+1. Go to **Billing > Settings > Late Fees**.
+2. Toggle **Enable Automatic Late Fees** on.
+3. Choose a late fee type:
+   - **Flat fee** — a fixed dollar amount added once after the due date passes
+   - **Percentage** — a percentage of the outstanding invoice balance, useful if tuition amounts vary
+4. Set the **Grace Period** (in days) — the number of days after the due date before the late fee is applied.
+5. Click **Save**.
+
+Once enabled, K8dKeep applies the late fee to qualifying invoices automatically and notifies the family by email.
+
+<Note>
+  Voided invoices are never permanently deleted. K8dKeep retains all voided invoices in the audit log so you maintain a complete financial record for compliance and reporting purposes. To view voided invoices, filter the invoice list by the **Voided** status or navigate to **Reports > Billing > Audit Log**.
+</Note>

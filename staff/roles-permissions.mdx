@@ -1,0 +1,87 @@
+---
+title: "Staff Roles and Permission Levels in K8dKeep"
+sidebarTitle: "Roles & Permissions"
+description: "Understand what each K8dKeep role can access and do — from full admin control to read-only viewer access — so you can give staff the right level of access."
+---
+
+Childcare centers handle some of the most sensitive data imaginable — children's health records, family contact details, billing information, and incident reports. K8dKeep uses role-based access control to make sure every staff member sees exactly what they need to do their job, and nothing more. Assigning the right role from day one protects your families' privacy, reduces the risk of accidental edits, and keeps your center in compliance with data protection requirements.
+
+## Available Roles
+
+K8dKeep offers five built-in roles to cover the full range of positions at a typical childcare center.
+
+| Role | Who It's For | Key Capabilities |
+|---|---|---|
+| **Owner** | Center owner | Full access to all settings, billing, staff, and data |
+| **Admin** | Center director or manager | Manage enrollment, billing, staff, and reports; cannot change the billing plan |
+| **Lead Teacher** | Classroom teacher | Log activities, message families, and view the assigned classroom roster |
+| **Assistant Teacher** | Classroom aide | Log activities for an assigned classroom; cannot message families |
+| **Viewer** | Board member or auditor | Read-only access to reports and dashboards; no editing |
+
+## Assigning a Role
+
+You assign a role when you first invite a staff member. During the invite flow (**Staff > Team Members > Invite Staff**), select the appropriate role from the **Role** dropdown before clicking **Send Invite**. The staff member's permissions are active as soon as they accept the invitation and log in.
+
+If a staff member's responsibilities change — for example, an Assistant Teacher is promoted to Lead Teacher — you can update their role at any time without re-inviting them. Go to **Staff > [Staff Name] > Edit Role**, choose the new role from the dropdown, and click **Save**. The change takes effect immediately on their next page load or app refresh.
+
+## What Each Role Can Access
+
+<AccordionGroup>
+  <Accordion title="Owner">
+    Owners have unrestricted access to every feature and setting in K8dKeep. This includes:
+
+    - All features available to Admins (see below)
+    - **Subscription management** — upgrade, downgrade, or cancel the billing plan; update payment method
+    - **Data export** — export all center data as a full archive at any time
+    - **Account deletion** — permanently close the K8dKeep account
+    - **Owner transfer** — reassign the Owner role to another user
+
+    Only one user can hold the Owner role at a time. To transfer ownership, go to **Settings > Account > Transfer Ownership**.
+  </Accordion>
+  <Accordion title="Admin">
+    Admins can manage the day-to-day operations of the center but cannot make changes to the billing plan or transfer account ownership. Admin access includes:
+
+    - **Enrollment** — create and manage child profiles, process applications, manage the waitlist
+    - **Billing** — create invoices, record payments, issue credits, manage subsidy and voucher programs
+    - **Attendance** — view and edit attendance records across all classrooms
+    - **Classrooms** — create, edit, and archive classrooms; manage classroom-level settings
+    - **Staff management** — invite staff, assign roles, manage profiles and certifications, edit timesheets
+    - **Reports** — generate, export, and schedule all available report types
+    - **Communications** — send and receive messages with any family in the center
+  </Accordion>
+  <Accordion title="Lead Teacher">
+    Lead Teachers work within their assigned classrooms. They cannot access billing information, center-wide settings, or other classrooms they are not assigned to. Lead Teacher access includes:
+
+    - **Activity logging** — create and post daily activity updates, photos, and milestone notes for children in their classroom
+    - **Attendance** — mark children present or absent and record drop-off and pick-up times
+    - **Messaging** — send and receive messages with the families of children in their assigned classroom
+    - **Daily reports** — generate and share daily reports (meals, naps, activities) with families
+    - **Classroom roster** — view child profiles for children enrolled in their assigned classroom
+  </Accordion>
+  <Accordion title="Assistant Teacher">
+    Assistant Teachers have a focused set of permissions limited to classroom-level data entry. They cannot initiate conversations with families or view child profile details beyond what is needed for daily activity logging. Assistant Teacher access includes:
+
+    - **Activity logging** — log daily activities, meals, and nap times for children in their assigned classroom
+    - **Attendance** — mark children present or absent for their assigned classroom
+
+    Assistant Teachers do not have access to family contact information, billing records, enrollment details, or messaging.
+  </Accordion>
+  <Accordion title="Viewer">
+    Viewers have strictly read-only access and cannot create, edit, or delete any records. This role is designed for board members, external auditors, or licensing consultants who need visibility into center operations without the ability to make changes. Viewer access includes:
+
+    - **Dashboards** — view the center-level summary dashboard (enrollment counts, attendance rates, revenue overview)
+    - **Reports** — view and download all generated reports
+
+    Viewers cannot see individual family contact information, child health records, or staff personal details.
+  </Accordion>
+</AccordionGroup>
+
+## Parent Portal Access
+
+Parents and guardians access K8dKeep through a **separate Parent Portal** login, not through the staff interface. Parent accounts are created automatically when you enroll a child and add a guardian's email address. Parents can view their own child's daily reports, activity updates, invoices, and messages — they have no visibility into other children, classroom management, or any center-wide settings.
+
+Parents are not assigned any of the staff roles listed above. If a parent is also a staff member at your center (for example, a parent who also works as a teacher), they will have two separate accounts: one for their staff role and one for their parent access.
+
+<Warning>
+  Review role assignments any time a staff member changes position or leaves your organization. A former Lead Teacher who moves to a part-time administrative role should have their role updated to reflect their new responsibilities. When a staff member departs, deactivate their account immediately to revoke all access. Go to **Staff > [Staff Name] > Edit Profile > Deactivate Account**. Failing to update roles promptly can expose sensitive family and financial data to users who no longer need it.
+</Warning>

@@ -1,0 +1,66 @@
+---
+title: "Track Government Subsidies and Childcare Funding"
+sidebarTitle: "Subsidies"
+description: "Record third-party funding sources like childcare subsidies and vouchers in K8dKeep to accurately track balances owed by families and agencies."
+---
+
+Many families rely on government assistance programs, employer childcare benefits, or community vouchers to help cover the cost of care. K8dKeep lets you record these funding sources alongside each child's billing account so you always know exactly how much a family owes versus how much an agency is responsible for paying — without managing separate spreadsheets or doing the math yourself.
+
+## How Subsidies Work in K8dKeep
+
+When a child receives a government subsidy, employer childcare benefit, or similar third-party funding, the total tuition is split between two payers: the funding agency and the family. The agency pays its authorized portion directly to your center on a set schedule, and the family covers the remainder.
+
+K8dKeep models this split by letting you attach one or more **funding sources** to a child's billing account. Each funding source records the agency name, the authorized payment amount, and the contract period. Once a funding source is in place, K8dKeep automatically deducts the subsidy amount from the child's total tuition and shows you — and the family — only the balance the family is responsible for paying. Agency payments are tracked separately so you can reconcile what you've received against what each agency owes.
+
+## Adding a Subsidy to a Child's Account
+
+<Steps>
+  <Step title="Open the child's profile and go to the Billing tab">
+    Navigate to **Children** in the sidebar and open the child's profile. Click the **Billing** tab to view the child's billing settings and current fee plan.
+  </Step>
+  <Step title="Click 'Add Funding Source'">
+    Under the **Funding Sources** section, click **Add Funding Source** to open the funding source form.
+  </Step>
+  <Step title="Enter the funding source details">
+    Fill in the following fields:
+    - **Funding Agency Name** — the name of the government program, employer, or organization providing the subsidy (e.g., "Child Care Assistance Program," "CCAP," or "Employer XYZ FSA")
+    - **Authorized Amount** — the amount the agency will pay, entered as a weekly or monthly figure to match your billing frequency
+    - **Contract Start Date** and **Contract End Date** — the dates during which the subsidy is active; K8dKeep will stop applying the subsidy automatically after the end date
+  </Step>
+  <Step title="Save the funding source">
+    Click **Save**. K8dKeep immediately recalculates the child's family balance on all future invoices, subtracting the authorized subsidy amount. The invoice sent to the family will reflect only their portion of the tuition, while the full tuition amount and agency responsibility are visible in the admin view.
+  </Step>
+</Steps>
+
+## Tracking Subsidy Payments
+
+Recording payments received from a funding agency keeps your books accurate and makes it easy to identify any outstanding agency balances.
+
+1. Go to **Billing > Subsidies** in the admin sidebar.
+2. Click **Record Payment**.
+3. Select the **Child** and the associated **Funding Source** from the dropdowns.
+4. Enter the **Payment Amount** and **Payment Date**.
+5. Optionally add a **Reference Number** or note from the agency's remittance advice.
+6. Click **Save**.
+
+K8dKeep applies the payment to the agency's open balance for that child and updates your subsidy ledger in real time. You can record partial payments if an agency pays less than the authorized amount for a given period — K8dKeep will flag the remaining balance as outstanding.
+
+## Subsidy Reports
+
+K8dKeep provides dedicated subsidy reporting so you can monitor funding income and identify gaps between what agencies owe and what they've paid.
+
+Navigate to **Reports > Billing > Subsidy Summary** to access the following:
+
+- **Total Subsidy Income** — the aggregate amount received from all funding agencies over a selected date range
+- **Agency Breakdown** — a line-by-line view of each agency showing authorized amounts, payments received, and outstanding balances
+- **Child-Level Detail** — drill down by individual child to see their subsidy history, family balance, and any contract expirations coming up
+
+You can export any subsidy report to CSV or PDF for record-keeping, audits, or submission to your licensing agency.
+
+<Note>
+  K8dKeep tracks subsidy data and payments for your internal records, but it does **not** submit claims or billing directly to government agencies or subsidy programs. The process for submitting claims varies by program and state. Check with your local childcare assistance program or subsidy coordinator for specific submission requirements, deadlines, and documentation standards.
+</Note>
+
+<Tip>
+  If an agency's subsidy always covers a fixed portion of tuition, consider creating a dedicated fee plan with that subsidy already factored into the family rate — for example, a "CCAP Full-Time" plan priced at the family co-pay amount. This simplifies invoicing for those families, since K8dKeep bills the family co-pay directly without needing to calculate the split on every invoice. Use the Funding Source feature to separately track what the agency owes your center.
+</Tip>
